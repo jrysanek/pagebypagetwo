@@ -10,18 +10,22 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false)
 
 
-const getBooks = async () => {
-  let apiKey = process.env.REACT_APP_API_KEY
-  const response = await axios(`https://www.googleapis.com/books/v1/volumes?q=${input}&orderBy=newest&key=${apiKey}`)
-  setBook(response.data.items)
-}
 
 
 
-useEffect(() => {
-  getBooks();
-  if (isLoaded) setIsLoaded(false)
-}, [isLoaded])
+
+  useEffect(() => {
+    const getBooks = () => {
+      let apiKey = process.env.REACT_APP_API_KEY
+      axios(`https://www.googleapis.com/books/v1/volumes?q=${input}&orderBy=newest&key=${apiKey}`).then((res) => {
+        let filteredData = res.data.items.filter(x => x.volumeInfo.imageLinks)
+      console.log(filteredData)
+        setBook(filteredData)
+      });
+    };
+    getBooks()
+    if (isLoaded) setIsLoaded(false)
+  }, [isLoaded])
 
 
 
@@ -33,7 +37,7 @@ useEffect(() => {
     <div className="App">
 
       <SearchBar setInput={setInput} setIsLoaded={setIsLoaded} />
-      <Results  bookResults={book} />
+      <Results bookResults={book} />
     </div>
   );
 }
