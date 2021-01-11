@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import Results from './Results/Results';
 import SearchBar from './SearchBar/SearchBar';
+import Header from './Layout/Header';
 
 function App() {
   const [input, setInput] = useState('')
@@ -32,12 +33,13 @@ function App() {
 
 
   return (
-
-
     <div className="App">
+      <Header title="Page By Page" />
 
       <SearchBar setInput={setInput} setIsLoaded={setIsLoaded} />
+      
       <Results bookResults={book} />
+
     </div>
   );
 }
