@@ -4,6 +4,7 @@ import './App.css';
 import Results from './Results/Results';
 import SearchBar from './SearchBar/SearchBar';
 import Header from './Layout/Header';
+import Footer from './Layout/Footer';
 
 function App() {
   const [input, setInput] = useState('')
@@ -40,6 +41,7 @@ function App() {
       
       <Results bookResults={book} />
 
+      <Footer />
     </div>
   );
 }
