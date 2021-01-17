@@ -39,7 +39,9 @@ function App() {
 
       <SearchBar setInput={setInput} setIsLoaded={setIsLoaded} />
       
+      
       <Results bookResults={book} />
+     
 
       <Footer />
     </div>

@@ -4,6 +4,11 @@ body{
     height: 100vh;
     background-color:rgb(225, 225, 205);
   } 
+
+form{
+    display: flex;
+    justify-content: center;
+  }
 header{
     margin: 0;
     padding: 0;
