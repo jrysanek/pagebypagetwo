@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Results(props) {
     const bookList = props.bookResults
@@ -6,17 +7,17 @@ export default function Results(props) {
 
 
     return (
-        <div>
-
-            {bookList.map(x => {
+        <div className="results">
+            {bookList.map((x, index) => {
                 return (
                     <>
-                        <img src={x.volumeInfo.imageLinks.smallThumbnail}  alt={x.volumeInfo.title} />
-                        <h1>{x.volumeInfo.title}</h1>
+                    <Link to={`/Showbook/${index}`}>
+                        <img src={x.volumeInfo.imageLinks.smallThumbnail} key={index}  alt={x.volumeInfo.title} />
+                     </Link>
+                        <h1 key={x.volumeInfo.title}>{x.volumeInfo.title}</h1>
                     </>
                 )
             })}
-
         </div>
     )
 }

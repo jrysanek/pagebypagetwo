@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Route, Link } from 'react-router-dom';
+import Showbook from './ShowBook/ShowBook';
 import axios from 'axios';
 import './App.css';
 import Results from './Results/Results';
@@ -21,7 +23,6 @@ function App() {
       let apiKey = process.env.REACT_APP_API_KEY
       axios(`https://www.googleapis.com/books/v1/volumes?q=${input}&orderBy=newest&key=${apiKey}`).then((res) => {
         let filteredData = res.data.items.filter(x => x.volumeInfo.imageLinks)
-      console.log(filteredData)
         setBook(filteredData)
       });
     };
@@ -38,10 +39,14 @@ function App() {
       <Header title="Page By Page" />
 
       <SearchBar setInput={setInput} setIsLoaded={setIsLoaded} />
+
+      <Route exact path="/">
+        <Results bookResults={book} />
+      </Route>
+
+      <Route path="/Showbook/:index" render={() => < Showbook bookResults={book} />} />
       
-      
-      <Results bookResults={book} />
-     
+
 
       <Footer />
     </div>
