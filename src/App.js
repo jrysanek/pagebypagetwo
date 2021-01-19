@@ -30,6 +30,10 @@ function App() {
     if (isLoaded) setIsLoaded(false)
   }, [isLoaded])
 
+    const clearInput = () => {
+      // setInput([]);
+      setBook([]);
+    }
 
 
 
@@ -37,6 +41,10 @@ function App() {
   return (
     <div className="App">
       <Header title="Page By Page" />
+
+      <Link exact to="/">
+        <button className="Home" onClick={clearInput}>Home</button>
+      </Link>
 
       <SearchBar setInput={setInput} setIsLoaded={setIsLoaded} />
 

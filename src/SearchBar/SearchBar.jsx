@@ -13,7 +13,12 @@ export default function SearchBar(props) {
     return (
         <form onSubmit={handleChange} className="search-bar">
             <label htmlFor="search"></label>
-            <input onChange={e => setSearch(e.target.value)} value={search} for="search" type="text"></input>
+            <input
+             onChange={e => setSearch(e.target.value)}
+             value={search} 
+            //  for="search" 
+             type="text" />      
+             
             <input type="submit" value="submit" />
         </form>
     )
