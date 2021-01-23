@@ -39,11 +39,11 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="app">
       <Header title="Page By Page" />
 
       <Link exact to="/">
-        <button className="Home" onClick={clearInput}>Home</button>
+        <button className="home" onClick={clearInput}>Home</button>
       </Link>
 
       <SearchBar setInput={setInput} setIsLoaded={setIsLoaded} />
