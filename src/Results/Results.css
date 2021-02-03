@@ -1,0 +1,14 @@
+.results{
+border: 2px solid black;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 30px auto;
+border: 2px solid black;
+height: 820px;
+width: 1300px;
+align-content: center;
+background-color: rgb(175, 5, 8);
+    
+
+}

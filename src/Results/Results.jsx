@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Results.css';
 
 export default function Results(props) {
     const bookList = props.bookResults
