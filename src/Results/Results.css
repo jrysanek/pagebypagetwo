@@ -17,8 +17,14 @@ background-color: rgb(175, 5, 8);
     display: flex; 
     flex-wrap: wrap;
     align-content: center;
+    margin: 5px 5px;
 }
 .book img{
     width: 150px;
     height: 190px;  
+}
+.book h2{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 5px;
 }
