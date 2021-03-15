@@ -4,11 +4,21 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 margin: 30px auto;
-border: 2px solid black;
 height: 820px;
 width: 1300px;
+font-size: 8px;
 align-content: center;
 background-color: rgb(175, 5, 8);
-    
-
+}
+.book{
+    border: 2px solid pink;
+    height: 260px;
+    width: 150px;
+    display: flex; 
+    flex-wrap: wrap;
+    align-content: center;
+}
+.book img{
+    width: 150px;
+    height: 190px;  
 }
