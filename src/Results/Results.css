@@ -9,19 +9,22 @@ width: 1300px;
 font-size: 8px;
 align-content: center;
 background-color: rgb(175, 5, 8);
+overflow: auto;
 }
 .book{
-    border: 2px solid pink;
+    /* border: 2px solid black; */
     height: 260px;
-    width: 150px;
+    width: 170px;
     display: flex; 
     flex-wrap: wrap;
     align-content: center;
-    margin: 5px 5px;
+    justify-content: center;
+    margin: 15px 15px;
 }
 .book img{
     width: 150px;
-    height: 190px;  
+    height: 190px;
+     
 }
 .book h2{
     text-align: center;
