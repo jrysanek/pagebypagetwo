@@ -12,6 +12,7 @@ function App() {
   const [input, setInput] = useState('')
   const [book, setBook] = useState([])
   const [isLoaded, setIsLoaded] = useState(false)
+  const [wishList, setWishlist] = useState([]);
 
 
 
@@ -29,6 +30,19 @@ function App() {
     getBooks()
     if (isLoaded) setIsLoaded(false)
   }, [isLoaded])
+
+
+   //making the adds book to wishlist function
+   const addToWishlist = (book) => {
+    if (!localStorage.getItem('wishlist')) {
+      localStorage.setItem('wishlist', JSON.stringify([]));
+    }
+    //new variable to store the book to wishlist
+    const newWishlist = JSON.parse(localStorage.getItem('wishlist'));
+    newWishlist.push(book.volumeInfo.title);
+    localStorage.setItem('wishlist', JSON.stringify(newWishlist));
+    setWishlist(newWishlist);
+  }
 
     const clearInput = () => {
       // setInput([]);
@@ -49,10 +63,10 @@ function App() {
       <SearchBar setInput={setInput} setIsLoaded={setIsLoaded} />
 
       <Route exact path="/">
-        <Results bookResults={book} />
+        <Results addToWishlist={addToWishlist} bookResults={book} />
       </Route>
 
-      <Route path="/Showbook/:index" render={() => < Showbook bookResults={book} />} />
+      <Route path="/Showbook/:index" render={() => < Showbook addToWishlist={addToWishlist} bookResults={book} />} />
       
 
 
