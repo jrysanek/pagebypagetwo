@@ -43,7 +43,7 @@ function App() {
       <Header title="Page By Page" />
 
       <Link exact to="/">
-        <button className="home" onClick={clearInput}>Home</button>
+        <button className="home-button" onClick={clearInput}>Home</button>
       </Link>
 
       <SearchBar setInput={setInput} setIsLoaded={setIsLoaded} />
