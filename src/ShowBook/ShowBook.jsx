@@ -19,7 +19,7 @@ export default function ShowBook(props) {
 
                 <img className="showimg" src={bookIndex.volumeInfo.imageLinks.smallThumbnail} alt={bookIndex.volumeInfo.title} />
                 <h1 className="showtitle">{bookIndex.volumeInfo.title}</h1>
-                <h2 className="showauth">Author:{bookIndex.volumeInfo.authors}</h2>
+                <h2 className="showauth">{bookIndex.volumeInfo.authors}</h2>
                 {/* <p className="pages">Pages:{bookIndex.volumeInfo.pageCount}</p>   */}
                 <button className="buttonwish" onClick={() => props.addToWishlist(bookIndex)}>Add to wishlist</button>
                 <h3 className="showdes">{bookIndex.volumeInfo.description}</h3>
