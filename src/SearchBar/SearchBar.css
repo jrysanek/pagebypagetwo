@@ -1,0 +1,10 @@
+.search-button{
+    border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 15px;
+    font-weight: 700;
+    height: 30px;
+    width: 75px;
+    margin: 5px
+   
+}

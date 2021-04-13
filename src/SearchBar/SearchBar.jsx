@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import './SearchBar.css';
 
 export default function SearchBar(props) {
     const [search, setSearch] = useState('')
@@ -26,12 +27,10 @@ export default function SearchBar(props) {
             <input
                 onChange={e => setSearch(e.target.value)}
                 value={search}
-                //  for="search" 
                 type="text"
             />
 
-
-            <input type="submit" value="submit" />
+            <input className="search-button" type="submit" value="Submit" />
         </form>
     )
 }
