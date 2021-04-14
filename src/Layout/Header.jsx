@@ -5,5 +5,7 @@ export default function Header(props) {
         <header style={props.style}>
             <h1>{props.title}</h1>
         </header>
+
+        
     )
 }
