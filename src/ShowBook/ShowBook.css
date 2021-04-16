@@ -10,50 +10,52 @@
 .bookinfo{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    height: 710px;
-    width: 900px;
-    border: 2px solid pink;
+    justify-content: center;
+    padding-top: 10px;
+    margin: 10px auto;
+    height: 680px;
+    width: 850px;
+    /* border: 2px solid pink; */
 }
 
 
 .showbook img{
-    height: 400px;
-    width: 290px;
-    /* align-self: center;
-    justify-items: center; */
+    height: 275px;
+    width: 195px;
     margin: auto 30px;
-    border: 2px solid yellow;
+    border: 2px solid #000000;
 
 }
 .showtitle{
-    margin: 0 auto;
-    padding: 0;
-    font-size: 30px;
-    height:100px;
-    width:500px;
-    border: 2px solid salmon;
+    text-align: center;
+    margin: 2px auto;
+    padding-top:10px;
+    font-size: 25px;
+    height:40px;
+    width:715px;
 }
 
 .showauth{
+    text-align: center;
     padding: 0;
-    margin: 0;
+    margin: 2px auto;
     font-size: 18px;
-    width: 325px;
+    width: 625px;
     height: 30px;
-    border: 2px solid green;
 }
 
 .showdes{
-    border: 2px solid purple;
-    width: 850px;
+    width: 790px;
     height: 210px;
-    margin: 0 auto;
+    margin: 10px auto;
+    padding-top: 5px;
     overflow: auto;
+    text-align: center;
+    font-size: 15px;
 }
 
 .seemore{
-    border: 2px solid black;
+    color:rgb(225, 225, 205);
     height: 30px;
     margin: 0 auto;
     text-decoration: none;
@@ -61,7 +63,11 @@
 }
 
 .buttonwish{
-    border: 2px solid orange; 
+    border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-weight: 700;
+    margin-top: 245px;
     height: 30px;
-    font-size: 17px;
+    font-size: 12px;
 }
+
