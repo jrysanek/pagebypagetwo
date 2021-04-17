@@ -1,16 +1,17 @@
 .results{
-border: 2px solid black;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin: 30px auto;
-height: 820px;
-width: 1300px;
-font-size: 8px;
-align-content: center;
-background-color: rgb(175, 5, 8);
-overflow: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    height: 820px;
+    width: 1300px;
+    font-size: 8px;
+    align-content: center;
+    background-color: rgb(175, 5, 8);
+    overflow: auto;
 }
+
 .book{
     /* border: 2px solid black; */
     height: 260px;
@@ -21,13 +22,26 @@ overflow: auto;
     justify-content: center;
     margin: 15px 15px;
 }
+
 .book img{
     width: 150px;
-    height: 190px;
-     
+    height: 190px;     
 }
+
 .book h2{
     text-align: center;
     margin: 0 auto;
     padding-top: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .results{
+        height: 820px;
+        width: 1000px;
+    }
+    
+    .book{
+        overflow: auto;
+    }
 }

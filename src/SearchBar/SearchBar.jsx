@@ -3,7 +3,6 @@ import './SearchBar.css';
 
 export default function SearchBar(props) {
     const [search, setSearch] = useState('')
-    // const [newSearch, setNewSearch] = useState('')
 
     const handleChange = (e) => {
         e.preventDefault();

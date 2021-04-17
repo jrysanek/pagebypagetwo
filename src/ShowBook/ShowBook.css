@@ -71,3 +71,37 @@
     font-size: 12px;
 }
 
+@media only screen and (max-width: 1024px) {
+    
+    .showbook{
+        width: 1000px;
+    }
+
+    .buttonwish{
+        font-size: 18px;
+        height: 35px;
+        
+    }
+
+    .showbook img{
+        height: 285px;
+    }
+
+    .showtitle{
+        font-size: 28px;
+    }
+
+    .showauth{
+        font-size: 20px;
+    }
+
+    .showdes{
+        font-size: 18px;
+    }
+
+    .seemore{
+        font-size: 20px;
+    }
+
+}
+
