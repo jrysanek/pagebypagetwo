@@ -4,7 +4,8 @@
   margin: 0;
   min-height: 100vh;
   position: relative;
-  background-color:rgb(225, 225, 205);    
+  background-color:rgb(225, 225, 205); 
+    
 } 
 
 form{
@@ -62,11 +63,27 @@ a button{
 
 @media only screen and (max-width: 1024px) {
 
-.home-button{
-  font-size: 20px;
-  height: 35px;
-  width: 85px;
+  .home-button{
+    font-size: 20px;
+    height: 35px;
+    width: 85px;
+  }  
 
-}  
+}
 
+@media only screen and (max-width: 375px) {
+  .app{
+    padding: 0;
+  }
+
+  header h1{
+    font-size: 65px;
+    padding: 33px 0 50px 0;
+  }
+
+
+  a button{
+    margin: 15px 135px;  
+  }
+  
 }
