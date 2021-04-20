@@ -41,15 +41,12 @@
         width: 1000px;
     }
     
-    .book{
-        overflow: auto;
-    }
 }
 
 @media only screen and (max-width: 375px) {
 
     .results{
-       
+       /* height: 300px; */
         width: 365px;
         
       
