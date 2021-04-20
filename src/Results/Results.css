@@ -49,9 +49,23 @@
 @media only screen and (max-width: 375px) {
 
     .results{
-    
+       
         width: 365px;
+        
       
+    }
+
+    .book{
+        margin: 2px;
+        height: 190px;
+        width: 145px;
+         
+       
+    }
+
+    .book img{
+        height: 115px;
+        width: 90px;
     }
 
 }
