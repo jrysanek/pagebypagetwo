@@ -55,12 +55,14 @@ function App() {
   return (
     <div className="app">
       <Header title="Page By Page" />
-
+      
+    <div className="nav">
       <Link exact to="/">
         <button className="home-button" onClick={clearInput}>Home</button>
       </Link>
 
       <SearchBar setInput={setInput} setIsLoaded={setIsLoaded} />
+    </div>
 
       <Route exact path="/">
         <Results addToWishlist={addToWishlist} bookResults={book} />

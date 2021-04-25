@@ -3,9 +3,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* height: 80vh; */
     margin: 30px auto;
-    height: 820px;
-    width: 1300px;
+    width: 90vw;
     font-size: 8px;
     align-content: center;
     background-color: rgb(175, 5, 8);
@@ -14,8 +14,8 @@
 
 .book{
     /* border: 2px solid black; */
-    height: 260px;
-    width: 170px;
+    height: 270px;
+    width: 140px;
     display: flex; 
     flex-wrap: wrap;
     align-content: center;
@@ -37,8 +37,8 @@
 @media only screen and (max-width: 1024px) {
 
     .results{
-        height: 820px;
-        width: 1000px;
+        /* height: 820px; */
+        /* width: 1000px; */
     }
     
 }
